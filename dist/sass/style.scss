@@ -1,0 +1,21 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "base/variables";
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: $main-color;
+  
+}
+
+a {
+  text-decoration: none;
+}
+p {
+  margin-bottom: 0;
+}
+
+@import "blocks/btn";
+@import "blocks/title";
+@import "blocks/assortiment";

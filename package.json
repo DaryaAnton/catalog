@@ -1,5 +1,5 @@
 {
-  "name": "3dglo",
+  "name": "catalog",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,6 +12,11 @@
   "license": "ISC",
   "devDependencies": {
     "webpack": "^5.91.0",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0",
+    "sass": "1.77.6"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
   }
 }

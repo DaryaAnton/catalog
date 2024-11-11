@@ -1,5 +1,9 @@
-import one from './modules/one';
-import two from './modules/two';
+import 'bootstrap/js/dist/collapse';
+import load from './modules/load';
+import checkedProducts from './modules/checkedProducts';
+import cartStorage from './modules/cartStorage';
 
-one();
-two();
+
+load();
+checkedProducts();
+cartStorage()

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<script src="./js/cart.js" defer></script>
+	<link rel="stylesheet" href="./css/style.min.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<header class="header pt-4 pb-3">
+		<div class="container">
+			<div class="row">
+				<div class="col-6">
+					<a href="./index.html">
+						<img src="images/logo/logo.svg" alt="logo">
+					</a>
+				</div>
+				<div class="col-6">
+					<div class="d-flex justify-content-end">
+						<button type="button" class="btn btn-primary position-relative me-1 btn_cart">
+							<img src="images/icon/shopping-cart.svg" alt="shopping-cart">
+							<span
+								class="position-absolute translate-middle p-2 border border-white rounded-circle d-flex align-items-center justify-content-center btn_cart-count">
+								<span class="">0</span>
+							</span>
+						</button>
+						<div class="d-flex flex-column justify-content-center">
+							<p class="mb-0 btn_cart-text">Корзина</p>
+							<p class="mb-0">0 ₽</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+
+		<section class="cart pt-4 pb-5">
+			<div class="container">
+				<h1 class="title fw-bold">Корзина</h1>
+				<div class="row cart__wrapper" data-wrap="count">
+					<div class="col-12">
+						<div class="text-center fw-medium fs-4">Корзина пуста</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12 d-flex flex-column align-items-end">
+						<p class="fs-2 mb-4 fw-bold price__total">
+							Итого: 
+							<span>0</span>
+							₽
+						</p>
+						<button type="button" class="btn btn_order fw-semibold">
+							Перейти к оформлению
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+</body>
+
+</html>

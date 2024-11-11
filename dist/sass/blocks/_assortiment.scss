@@ -1,0 +1,71 @@
+.assortiment {
+  
+  &__card-title {
+    padding: 20px;
+    color: $main-color;
+    font-size: 16px;
+  }
+  &__accordion-button {
+    color: $main-color;
+    font-size: 14px;
+  }
+  &__color {
+    width: 18px;
+    height: 16px;
+    border-radius: 2px;
+    margin-left: 11px;
+    &_1 {
+      background-color: $assortiment-color--1;
+    }
+    &_2 {
+      background-color: $assortiment-color--2;
+    }
+    &_3 {
+      background-color: $assortiment-color--3;
+    }
+  }
+  &__size {
+    border: 1px solid $main-color;
+    width: 22px;
+    height: 15px;
+    border-radius: 3px;
+    margin-left: 5px;
+    font-size: 10px;
+  }
+}
+
+.card {
+  --bs-card-border-color: #5E5E5E;
+  color: $main-color;
+  &__trash-img {
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+  }
+  &__trash-text {
+    font-size: 14px;
+    color: $main-color;
+    &:active {
+      color: #fff;
+    }
+  }
+}
+
+.accordion {
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12 6.00024L8 10.0002L4 6.00024' stroke='%235E5E5E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12 6.00024L8 10.0002L4 6.00024' stroke='%235E5E5E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
+}
+.accordion-button:not(.collapsed) {
+  color: $main-color;
+}
+.card__count {
+  height: 24px;
+  border: 1px solid $main-color;
+  border-radius: 3px;
+  &_cart {
+    width: 208px;
+    height: 40px;
+  }
+}
+
+

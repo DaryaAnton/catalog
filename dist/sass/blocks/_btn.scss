@@ -1,0 +1,91 @@
+.btn {
+  &_cart, 
+  &_card {
+    width: 60px;
+    height: 60px;
+    background-color: $main-color;
+    border: none;
+    border-radius: 50px;
+    & img {
+      max-width: 100%;
+      height: auto;
+      pointer-events: none;
+    }
+    &:hover {
+      background-color: $hover-color;
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+    }
+    &-count {
+      background-color: $accent-color;
+      font-size: 10px;
+      width: 16px;
+      height: 16px;
+      top: 15%;
+      left: 88%;
+    }
+    &-text {
+      color: $text-light-color;
+    }
+  }
+
+  &__checkbox {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    border: 1px solid $text-light-color;
+    border-radius: 2px;
+    position: relative;
+    &:checked {
+      background-color: #5E5E5E;
+      border: 1px solid #5E5E5E;
+    }
+    &:checked::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 5px;
+      width: 6px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+
+    &-lable {
+      font-size: 16px;
+      color: $text-light-color;
+      &:hover {
+        color: $text-light-color;
+      }
+    }
+  }
+  &_count {
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    color: $main-color;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &_order {
+    background-color: $main-color;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 24px;
+    line-height: 20px;
+    padding: 24px 30px;
+    max-width: 352px;
+    &:hover{
+      border: 2px solid $main-color;
+      color: $main-color;
+    }
+  }
+}
+
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+  background-color: #000;
+}
